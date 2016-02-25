@@ -142,6 +142,13 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
 
 <hr/>
 
+<h2 id="rejestacja">Rejestracja</h2>
+<p>
+  Koszt warsztatów to ..., które zostaną przeznaczone na poczęstunek dla uczestników. Jeżeli chcecie wziąć udział w warsztatach prosimy o wypełnienie <a href='https://www.google.pl/'>ankiety</a>.
+</p>
+
+
+
 <!--
   SCHEDULE
 
@@ -149,35 +156,45 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h2 id="schedule">Schedule</h2>
+<h2 id="schedule">Plan warsztatów</h2>
 
 <!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href='{{ site.swc_pre_survey }}{{ site.github.project_title }}'>Pre-workshop Survey</a></p>
-<p><a href='{{ site.swc_post_survey }}{{ site.github.project_title }}'>Post-workshop Survey</a></p>
+<h4>Ankiety</h4>
+<p>Prosimy o wypełnienie poniższych ankiet przed oraz po warsztatach:</p>
+<p><a href='{{ site.swc_pre_survey }}{{ site.github.project_title }}'>Ankieta wstępna, do wypełnienia przed warsztatem</a></p>
+<p><a href='{{ site.swc_post_survey }}{{ site.github.project_title }}'>Ankieta ewaluacyjna warsztatów</a></p>
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>Dzień 1 (sobota)</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>09:00</td>  <td>Powitanie. Pomoc przy konfiguracji laptopów.</td> </tr>
+      <tr> <td>09:30</td>  <td>Praca z linią komend.</td> </tr>
+      <tr> <td>11:00</td>  <td>Przerwa.</td> </tr>
+      <tr> <td>11:15</td>  <td>Praca z linią komend &ndash; ciąg dalszy.</td> </tr>
+      <tr> <td>12:30</td>  <td>Przerwa na obiad.</td> </tr>
+      <tr> <td>13:45</td>  <td>Programowanie z użyciem R.</td> </tr>
+      <tr> <td>14:30</td>  <td>Przerwa.</td> </tr>
+      <tr> <td>14:45</td>  <td>Programowanie z użyciem R &ndash; ciąg dalszy.</td> </tr>
+      <tr> <td>15:45</td>  <td>Przerwa.</td> </tr>
+      <tr> <td>16:00</td>  <td>Programowanie z użyciem R &ndash; ciąg dalszy.</td> </tr>
+      <tr> <td>16:45</td>  <td>Podsumowanie dnia i zakończenie.</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
-    <h3>Day 2</h3>
+    <h3>Dzień 2 (niedziela)</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>09:00</td>  <td>Powitanie.</td> </tr>
+      <tr> <td>09:10</td>  <td>Kontrola wersji z użyciem Git.</td> </tr>
+      <tr> <td>11:00</td>  <td>Przerwa.</td> </tr>
+      <tr> <td>11:15</td>  <td>Kontrola wersji z użyciem Git &ndash; ciąg dalszy.</td> </tr>
+      <tr> <td>12:30</td>  <td>Przerwa na obiad i wizytę w serwerowi ACK.</td> </tr>
+      <tr> <td>14:00</td>  <td>Kontrola wersji z użyciem Git &ndash; ciąg dalszy.</td> </tr>
+      <tr> <td>14:45</td>  <td>Przerwa.</td> </tr>
+      <tr> <td>15:00</td>  <td>Kontrola wersji z użyciem Git &ndash; ciąg dalszy.</td> </tr>
+      <tr> <td>14:45</td>  <td>Przerwa.</td> </tr>
+      <tr> <td>16:00</td>  <td>Kontrola wersji z użyciem Git &ndash; ciąg dalszy.</td> </tr>
+      <tr> <td>16:45</td>  <td>Podsumowanie dnia i zakończenie warsztatów.</td> </tr>
     </table>
   </div>
 </div>
@@ -200,7 +217,7 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
 <p id="etherpad">
   <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+    W trakcie warsztatów będziemy używać tego Etherpada do pisania notatek, komunikacji oraz współdzielenia odnośników czy fragmentów kodu.
 </p>
 {% endif %}
 
@@ -226,7 +243,7 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
 <h2 id="syllabus">Syllabus</h2>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3 id="syllabus-shell">The Unix Shell</h3>
     <ul>
       <li>Files and directories</li>
@@ -238,6 +255,7 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
       <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
     </ul>
   </div>
+  <!--
   <div class="col-md-6">
     <h3 id="syllabus-python">Programming in Python</h3>
     <ul>
@@ -251,8 +269,9 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
       <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
     </ul>
   </div>
-  <!--
-  <div class="col-md-6">
+  -->
+  
+  <div class="col-md-4">
     <h3 id="syllabus-r">Programming in R</h3>
     <ul>
       <li>Working with vectors and data frames</li>
@@ -263,7 +282,7 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
       <li><a href="{{site.swc_githubio}}/r-novice-inflammation/reference.html">Reference...</a></li>
     </ul>
   </div>
-  -->
+  
   <!--
   <div class="col-md-6">
     <h3 id="syllabus-matlab">Programming in MATLAB</h3>
@@ -277,10 +296,7 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
      </ul>
    </div>
    -->
-</div>
-
-<div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3 id="syllabus-git">Version Control with Git</h3>
     <ul>
       <li>Creating a repository</li>
@@ -294,7 +310,7 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
       <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Reference...</a></li>
     </ul>
   </div>
-  <div class="col-md-6">
+  <!-- <div class="col-md-6">
     <h3 id="syllabus-sql">Managing Data with SQL</h3>
     <ul>
       <li>Reading and sorting data</li>
@@ -307,7 +323,7 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
       <li>Programming with databases</li>
       <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Reference...</a></li>
     </ul>
-  </div>
+  </div> -->
 </div>
 
 <hr/>
@@ -523,10 +539,11 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
   </div>
 </div> <!-- End of 'editor' section. -->
 
-<div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
+<!--
+<div id="python">  Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the IPython notebook.
-           Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
+           Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility
   <h3>Python</h3>
 
   <p>
@@ -601,14 +618,16 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
       </ol>
     </div>
   </div>
+-->
 <!--
   <p>
   Once you are done installing the software listed above,
   please go to <a href="setup/index.html">this page</a>,
   which has instructions on how to test that everything was installed correctly.
   </p>
+
+</div> 
 -->
-</div> <!-- End of 'Python' section. -->
 
 <div id="r"> <!-- Start of 'R' section. -->
   <h3>R</h3>
@@ -655,7 +674,8 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
   </div>
 </div> <!-- End of 'R' section. -->
 
-<div id="sql"> <!-- Start of 'SQLite' section. -->
+<!--
+<div id="sql"> 
   <h3>SQLite</h3>
 
   <p>
@@ -690,7 +710,8 @@ etherpad: http://pad.software-carpentry.org/2016-03-12-Krakow        # optional 
   <p><strong>If you installed Anaconda, it also has a copy of SQLite
     <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
     Instructors will provide a workaround for it if needed.</strong></p>
-</div> <!-- End of 'SQLite' section. -->
+</div> 
+-->
 
 <!--
   Uncomment this section if you are using our virtual machine.
